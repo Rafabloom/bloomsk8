@@ -1,0 +1,77 @@
+.shapes-lista {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.shapes-lista h1 {
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 120px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shapes-lista ul {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+.shapes-lista li {
+    flex: 1;
+    min-width: 280px;
+}
+
+.shapes-lista a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.shapes-lista img {
+    margin-bottom: 32px;
+    margin-top: 20px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.shapes-lista h3 {
+    margin-left: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.shapes-lista h3::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 16px;
+    margin-right: 8px;
+    background: linear-gradient(90deg, #ff4343 0%, #600 100%);
+    transition: width 0.2s;
+}
+
+.shapes-lista a:hover h3::before {
+    width: 24px;
+}
+
+.shapes-lista li span {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .shapes-lista {
+        padding-bottom: 60px;
+    }
+
+    .shapes-lista ul {
+        gap: 20px;
+    }
+}

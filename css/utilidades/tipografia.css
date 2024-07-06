@@ -1,0 +1,70 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Roboto Mono", sans-serif;
+    --font3: "Merriweather", sans-serif;
+}
+
+.texto-grande {
+    font: 600 3.125rem/75% var(--font-family);
+}
+
+.texto-medio {
+    font: 400 1rem/160% var(--second-family);
+}
+
+.titulo-produtos {
+    color: var(--c12);
+    font: 500 1.6rem/150% var(--font-family);
+}
+
+.descricao-produtos {
+    color: var(--c8);
+    font: 500 0.8rem var(--font-family);
+}
+
+.descricao-produtos strong {
+    color: var(--p1);
+    font: 800 1.2rem/89% var(--font-family);
+}
+
+@media (max-width: 1200px) {
+    .introducao h1 {
+        font-size: 2.5rem;
+    }
+
+    .introducao p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+
+    .introducao p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 946px) {
+    .introducao h1 {
+        font-size: 2rem;
+    }
+
+    .introducao p {
+        font-size: 0.875rem;
+    }
+
+    .introducao a {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-menu a {
+        padding: 8px 12px;
+        font-size: 0.875rem;
+    }
+}
