@@ -58,7 +58,7 @@
 }
 
 .shapes-lista a:hover h3::before {
-    width: 24px;
+    width: 32px;
 }
 
 .shapes-lista li span {
