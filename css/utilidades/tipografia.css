@@ -97,6 +97,23 @@
     text-transform: uppercase;
 }
 
+.titulo-acima {
+    color: var(--c6);
+    font: 600 1rem/160% var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+}
+
+.titulo-politicas {
+    color: var(--c11);
+    font: 600 1.7rem/100% var(--font-family);
+}
+
+.texto-politica {
+    color: var(--c10);
+    font: 400 1.1rem/133% var(--second-family);
+}
+
 @media (max-width: 1200px) {
     .introducao h1 {
         font-size: 2.5rem;
@@ -119,7 +136,7 @@
     .shapes-lista h1 {
         font-size: 3rem;
     }
-    
+
     .titulo-footer {
         font-size: 1.5rem;
     }
