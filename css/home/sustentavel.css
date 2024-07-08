@@ -1,0 +1,89 @@
+.sustentavel-bg {
+  background-color: var(--c11);
+}
+
+.sustentavel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.sustentavel img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.sustentavel-imagem {
+  box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.15);
+}
+
+.sustentavel-conteudo {
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-bottom: 160px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sustentavel-conteudo > span {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.sustentavel h1 {
+  color: var(--w);
+  line-height: 105%;
+  margin-bottom: 32px;
+}
+
+.sustentavel-conteudo > p {
+  margin-bottom: 60px;
+}
+
+.sustentavel a {
+  margin-bottom: 120px;
+}
+
+.sustentavel-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.sustentavel-vantagens img {
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.sustentavel-vantagens h3 {
+  margin-bottom: 16px;
+  width: max-content;
+}
+
+@media (max-width: 800px) {
+  .sustentavel-bg {
+    box-shadow: initial;
+  }
+
+  .sustentavel {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sustentavel-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 100%;
+  }
+
+  .sustentavel a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sustentavel-vantagens {
+    flex-direction: column;
+  }
+}

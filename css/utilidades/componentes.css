@@ -16,10 +16,27 @@
     background: linear-gradient(180deg, #ff4343 0%, #600 100%);
     border-radius: 6px;
     text-transform: uppercase;
+    max-width: max-content;
 }
 
 .botao:hover {
     background: linear-gradient(180deg, #a00f0f 0%, #440202 100%);
+}
+
+.botao.secundario {
+    background: linear-gradient(180deg, #737373 0%, #242424 100%);
+}
+
+.botao.secundario:hover {
+    background: linear-gradient(180deg, #363636 0%, #535353 100%);
+}
+
+.botao.terciario {
+    background: linear-gradient(180deg, #cc0000 0%, #ff4343 100%);
+}
+
+.botao.terciario:hover {
+    background: linear-gradient(180deg, #cc0000 0%, #0d0000 100%);
 }
 
 @media (min-width: 801px) and (max-width: 946px) {

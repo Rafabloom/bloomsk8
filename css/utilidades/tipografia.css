@@ -34,15 +34,67 @@
     font: 500 1.25rem/160% var(--second-family);
 }
 
-.titulo-tecnologia {
+.titulo-sustentavel {
     letter-spacing: 0.05em;
     color: var(--w);
     font: 500 1.5rem/150% var(--second-family);
 }
 
-.p-tecnologia {
+.p-sustentavel {
     color: var(--c4);
     font: 400 0.9rem/150% var(--second-family);
+}
+
+.texto-depoimento {
+    font: italic 900 2.5rem/133% var(--font3);
+    color: var(--p5);
+}
+
+.assinatura-depoimento {
+    font: 700 1.5rem/200% var(--font-family);
+    color: var(--p4);
+}
+
+.seguros-titulo {
+    text-transform: uppercase;
+    font: 600 2rem/133% var(--font-family);
+    color: var(--c6);
+}
+
+.seguros-preco {
+    font: 600 2rem/133% var(--font-family);
+    color: var(--w);
+    position: relative;
+}
+
+.seguros-mensal {
+    color: var(--c6);
+    font: 600 0.8rem/300% var(--font-family);
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+
+.lista-seguros {
+    color: var(--w);
+    font: 600 1.125rem/170% var(--font-family);
+}
+
+.titulo-footer {
+    text-transform: uppercase;
+    color: var(--w);
+    font: 500 2rem/133% var(--second-family);
+}
+
+.informacoes-footer {
+    color: var(--c6);
+    font: 500 1rem/133% var(--second-family);
+}
+
+.copyright {
+    color: var(--c6);
+    font: 500 0.8rem/133% var(--second-family);
+    text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -67,6 +119,10 @@
     .shapes-lista h1 {
         font-size: 3rem;
     }
+    
+    .titulo-footer {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 946px) {
@@ -85,7 +141,31 @@
 
 @media (max-width: 600px) {
     .header-menu a {
-        padding: 8px 12px;
         font-size: 0.875rem;
+    }
+
+    .sustentavel h1 {
+        font-size: 2.2rem;
+    }
+
+    .titulo-sustentavel {
+        font-size: 1.2rem;
+    }
+
+    .p-sustentavel {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .sustentavel-conteudo {
+        padding: 20px;
+    }
+
+    .sustentavel a {
+        font-size: 0.9rem;
+    }
+
+    .lista-seguros {
+        font-size: 0.8rem;
     }
 }
