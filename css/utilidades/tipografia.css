@@ -57,8 +57,9 @@
 
 .seguros-titulo {
     text-transform: uppercase;
-    font: 600 2rem/133% var(--font-family);
+    font: 700 2rem/133% var(--font-family);
     color: var(--c6);
+    letter-spacing: 0.09rem;
 }
 
 .seguros-preco {
@@ -112,6 +113,49 @@
 .texto-politica {
     color: var(--c10);
     font: 400 1.1rem/133% var(--second-family);
+}
+
+.preco-shapes {
+    color: var(--p1);
+    font: 600 1.4rem/100% var(--second-family);
+}
+
+.descricao-shapes {
+    color: var(--c11);
+    font: 700 1.6rem/150% var(--font-family);
+}
+
+.texto-shapes {
+    color: var(--c8);
+    font: 400 1.1rem/117% var(--second-family);
+}
+
+.titulo-lista {
+    font: 500 1rem/133% var(--font-family);
+}
+
+.titulo-vantagens {
+    color: var(--c1);
+    font: 500 1.6rem/100% var(--font-family);
+}
+
+.texto-vantagens {
+    color: var(--c5);
+    font: 500 0.9rem/133% var(--font-family);
+}
+
+.texto-acima-vantagens {
+    color: var(--c5);
+    font: 500 0.6rem/267% var(--font-family);
+}
+
+.titulo-perguntas {
+    font: 600 1.1rem/133% var(--font-family);
+}
+
+.respostas {
+    color: var(--c10);
+    font: 400 0.9rem/133% var(--second-family);
 }
 
 @media (max-width: 1200px) {

@@ -39,6 +39,26 @@
     background: linear-gradient(180deg, #cc0000 0%, #0d0000 100%);
 }
 
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+
+.botao.seta::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 10px;
+    margin-left: 12px;
+    background: url("../../Icones/Skate/seta-lado.svg");
+    background-repeat: no-repeat;
+    transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+    transform: translateX(4px);
+}
+
 @media (min-width: 801px) and (max-width: 946px) {
     .botao {
         font-size: 12px;
@@ -71,6 +91,8 @@
     padding-bottom: 32px;
 }
 
+main 
+
 .titulo p {
     margin-bottom: 8px;
 }
@@ -87,5 +109,10 @@
 
     .titulo h1 {
         font-size: 2rem;
+    }
+
+    .botao.seta::after {
+        width: 24px;
+        height: 10px;
     }
 }

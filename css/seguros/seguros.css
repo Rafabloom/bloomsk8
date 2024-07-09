@@ -2,6 +2,18 @@
     background: linear-gradient(360deg, #0d0000 0%, #730000 100%);
 }
 
+.seguros-page {
+    background-color: var(--c10);
+}
+
+#seguros .seguros {
+    padding-top: 0;
+}
+
+#seguros .titulo-bg {
+    background-color: var(--c10);
+}
+
 .seguros {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -21,9 +33,14 @@
     padding: 32px 32px 32px 60px;
     display: grid;
     grid-template-columns: 1fr auto;
+    border-radius: 6px;
 }
 
 .seguros-item:nth-child(3) {
+    background: linear-gradient(180deg, #ffd700 0%, #ffb14e 100%);
+}
+
+.seguros-page .seguros-item:nth-child(2) {
     background: linear-gradient(180deg, #ffd700 0%, #ffb14e 100%);
 }
 
@@ -53,7 +70,7 @@
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-image: url(../../blooms-arquivos/imagens/icones/Lista.svg);
+    background-image: url(../../Icones/Skate/Lista.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,5 +85,9 @@
 @media (max-width: 800px) {
     .seguros {
         grid-template-columns: 1fr;
+    }
+
+    .seguros-item {
+        padding: 32px;
     }
 }

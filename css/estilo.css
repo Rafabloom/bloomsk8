@@ -17,8 +17,13 @@
 /* Shapes da Loja */
 @import "./shapes/shapes-lista.css";
 
+/* Shapes */
+@import "./shapes/shapes.css";
+
 /* Seguros */
 @import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
 
 /* Termos */
 @import "./termos/termos.css";

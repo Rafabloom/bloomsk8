@@ -1,0 +1,121 @@
+.shapes-bg {
+    background-color: var(--c11);
+}
+
+.shapes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.shapes-imagem {
+    position: relative;
+    max-width: 460px;
+}
+
+.shapes-imagem span {
+    background: var(--c12);
+    border-radius: 6px 0 0 6px;
+    padding: 8px 20px 8px 8px;
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    right: 0;
+    box-shadow: 0 0 4px 0 rgba(255, 0, 0, 0.973);
+}
+
+.shapes:nth-of-type(1) .shapes-imagem span {
+    background: var(--c3);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.934);
+}
+
+.shapes-imagem img {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.shapes:nth-of-type(1) .shapes-imagem img {
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.796);
+}
+
+.shapes-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: space-evenly;
+}
+
+.shapes a.botao {
+    font-size: 0.8rem;
+    padding: 12px 20px;
+}
+
+.shapes-conteudo h2,
+.shapes-conteudo p {
+    grid-column: 1/-1;
+}
+
+.shapes h2 {
+    margin-bottom: 20px;
+}
+
+.shapes h2::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background: linear-gradient(90deg, #ff4343 0%, #600 100%);
+}
+
+.shapes p {
+    margin-bottom: 32px;
+}
+
+.shapes a {
+    place-self: end;
+}
+
+.shapes ul {
+    display: grid;
+    gap: 16px;
+}
+
+.shapes li {
+    display: flex;
+    align-items: center;
+}
+
+.shapes-conteudo img {
+    width: 32px;
+    margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+    .shapes-bg {
+        background: var(--c11);
+    }
+
+    .shapes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .shapes-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .shapes ul {
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
+    }
+
+    .shapes a {
+        margin-top: 20px;
+        place-self: end;
+    }
+}
