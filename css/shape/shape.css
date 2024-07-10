@@ -1,0 +1,444 @@
+#shape .titulo-bg {
+    padding-bottom: 0;
+}
+
+.shape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.shape-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shape-imagem-principal {
+    max-width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.shape-imagens-secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shape-imagens-secundarias img {
+    max-width: calc(33.333% - 13.33px);
+    flex: 1 1 calc(33.333% - 13.33px);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.shape-conteudo>p {
+    margin-bottom: 32px;
+}
+
+.shape-comprar {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
+    margin-bottom: 40px;
+}
+
+.shape-comprar a {
+    grid-row: span 2;
+}
+
+.shape-comprar span {
+    display: flex;
+    align-items: center;
+    background-color: var(--c12);
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.shape-conteudo h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: 12px;
+}
+
+.shape-informacoes {
+    padding: 32px;
+    background-color: var(--c12);
+    border-radius: 8px;
+}
+
+.shape-informacoes {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.shape-informacoes img {
+    width: 24px;
+    margin-bottom: 8px;
+}
+
+.shape-informacoes h3 {
+    margin-bottom: 8px;
+}
+
+.ficha {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ficha-bg {
+    background: var(--c10);
+}
+
+.ficha h2 {
+    margin-bottom: 32px;
+}
+
+.lista-bg {
+    background-color: var(--c12);
+    border-radius: 6px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+}
+
+.lista-bg ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ficha-esquerda li,
+.ficha-direita li {
+    margin-bottom: 8px;
+}
+
+.ficha-direita li {
+    margin-left: 80px;
+}
+
+.ficha-imagem {
+    position: absolute;
+    grid-column: 2 / 3;
+    justify-self: start;
+    align-self: end;
+    padding: 32px;
+    margin-left: 60px;
+}
+
+.opcoes-bg {
+    background-color: var(--p3);
+}
+
+.opcoes {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo-opcoes {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.outras-opcoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.outras-opcoes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 4px var(--p5);
+}
+
+.propaganda-seguro {
+    overflow: hidden;
+    position: relative;
+}
+
+.propaganda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container-retangulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-left: 150px; 
+}
+
+.borda-retangulo {
+    width: 150px;
+    height: 85%;
+    padding-bottom: 40px;
+    background: var(--p3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50px 0 0 50px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.propaganda-imagem {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.propaganda-imagem img {
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 6px;
+}
+
+.propaganda h1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-left: 40px;
+}
+
+.propaganda h2 {
+    line-height: 120%;
+    margin-top: 60px;
+    width: 15ch;
+}
+
+.propaganda p {
+    margin-top: 40px;
+    position: relative;
+    width: 50ch;
+    z-index: 2;
+}
+
+.propaganda a {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    padding: 16px 20px;
+}
+
+.dec-blooms {
+    position: absolute;
+    bottom: -40px;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+@media (max-width: 831px) {
+    .shape {
+        grid-template-columns: 1fr;
+    }
+
+    .shape-imagem-principal {
+        max-width: 80%;
+        place-self: center;
+    }
+
+    .shape-imagens-secundarias {
+        max-width: calc(81.333% - 13.33px);
+        flex: 1 1 calc(83.333% - 13.33px);
+        place-self: center;
+    }
+
+    .ficha-imagem {
+        width: 40%;
+    }
+
+    .outras-opcoes {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .lista-bg {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .ficha-direita li {
+        margin-left: 0;
+    }
+
+    .ficha-imagem {
+        grid-column: 1 / -1;
+        justify-self: start;
+        position: static;
+        padding: 32px 0 32px 0;
+        margin: 0;
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 1130px) and (min-width: 831px) {
+    .outras-opcoes {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1082px) {
+    .propaganda h1 {
+        font-size: 2.9rem;
+        margin-bottom: 0;
+    }
+
+    .propaganda h2 {
+        font-size: 2rem;
+        margin-top: 32px;
+    }
+
+    .propaganda a {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .container-retangulo {
+        padding-left: 130px; 
+    }
+    
+
+    .borda-retangulo {
+        width: 130px;
+        height: 75%;
+    }
+}
+
+@media (max-width: 926px) {
+    .propaganda h1 {
+        font-size: 2.4rem;
+        margin-bottom: 0;
+    }
+
+    .propaganda h2 {
+        margin-top: 16px;
+    }
+
+    .propaganda p {
+        font-size: 0.8rem;
+        margin-top: 16px;
+    }
+
+    .propaganda a {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .container-retangulo {
+        padding-left: 100px; 
+    }
+
+    .borda-retangulo {
+        width: 100px;
+        height: 75%;
+    }
+}
+
+@media (max-width: 800px) {
+    .propaganda {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+
+    .container-retangulo {
+        display: flex;
+        flex-direction: column; /* Empilha a borda e a imagem verticalmente */
+        position: relative; /* Necessário para o posicionamento absoluto da borda */
+        padding-left: 0;
+    }
+
+    .borda-retangulo {
+        width: 70%; /* Ajusta a largura da borda */
+        height: 100px;
+        border-radius: 50px 50px 0 0; /* Mantém o arredondamento na parte superior */
+        position: absolute; /* Posiciona a borda sobre a imagem */
+        top: 0; /* Alinha a borda no topo do contêiner */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Garante que a borda esteja centralizada horizontalmente */
+        background: var(--p3); /* Adiciona a cor de fundo para garantir que a borda fique visível */
+        padding-bottom: 0;
+        justify-content: start;
+    }
+
+    .propaganda-imagem {
+        width: 100%;
+        height: 300px; /* Define uma altura específica */
+        display: flex;
+        justify-content: center; /* Alinha a imagem horizontalmente no centro */
+        align-items: center; /* Alinha a imagem verticalmente no centro */
+    }
+
+    .propaganda-imagem img {
+        width: 90%;
+        height: 100%;
+        padding-top: 200px;
+        object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+        object-position: bottom;
+        position: relative; /* Garante que a imagem esteja abaixo da borda */
+        z-index: 1; /* Garante que a imagem fique abaixo da borda */
+        border-radius: 6px;
+    }
+
+    .propaganda h1 {
+        writing-mode: horizontal-tb; /* Remove a escrita vertical */
+        text-orientation: upright; /* Remove a orientação do texto */
+        transform: none; /* Remove a rotação */
+        margin-left: 40px; /* Remove o margin-left */
+        margin-bottom: 20px; /* Remove o margin-left */
+    }
+
+    .propaganda h2 {
+        margin-top: 140px;
+        padding-left: 40px;
+        width: auto;
+    }
+
+    .propaganda p {
+        margin-top: 40px;
+        position: relative;
+        z-index: 2;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: auto;
+    }
+    
+    .propaganda a {
+        margin-top: 40px;
+        font-size: 1rem;
+        padding: 16px 20px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        width: auto;
+    }
+}

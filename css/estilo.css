@@ -20,6 +20,9 @@
 /* Shapes */
 @import "./shapes/shapes.css";
 
+/* Shapes (individuais) */
+@import "./shape/shape.css";
+
 /* Seguros */
 @import "./seguros/seguros.css";
 @import "./seguros/vantagens.css";

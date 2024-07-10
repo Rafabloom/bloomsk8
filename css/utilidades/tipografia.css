@@ -158,6 +158,43 @@
     font: 400 0.9rem/133% var(--second-family);
 }
 
+.titulo-shapes {
+    font: 600 2.5rem/75% var(--font-family);
+}
+
+.valor-shapes {
+    font: 700 1.8rem/160% var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.descricao-shape {
+    font: 400 1.3rem/133% var(--second-family);
+}
+
+.titulo-ficha {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font: 500 1.4rem/133% var(--font-family);
+}
+
+.lista-ficha {
+    font: 600 0.9rem/200% var(--font-family);
+}
+
+.titulo-opcoes {
+    font: 600 2rem/100% var(--font-family);
+}
+
+.propaganda-titulo-seguro {
+    color: var(--p3);
+    font: 600 5rem/33% var(--font-family);
+}
+
+.descricao-propaganda {
+    font: 400 1rem/120% var(--second-family);
+}
+
 @media (max-width: 1200px) {
     .introducao h1 {
         font-size: 2.5rem;
@@ -183,6 +220,10 @@
 
     .titulo-footer {
         font-size: 1.5rem;
+    }
+
+    .lista-ficha {
+        font-size: 0.7rem;
     }
 }
 
