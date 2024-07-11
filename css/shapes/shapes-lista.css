@@ -14,18 +14,21 @@
 }
 
 .shapes-lista ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 20px 20px 20px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: auto;
+    justify-content: center;
 }
 
 .shapes-lista li {
-    flex: 1;
-    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    box-sizing: border-box;
 }
 
 .shapes-lista a {
@@ -35,6 +38,9 @@
 }
 
 .shapes-lista img {
+    width: 100%;
+    height: auto;
+    max-width: 455px;
     margin-bottom: 32px;
     margin-top: 20px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
@@ -66,18 +72,36 @@
     text-align: center;
 }
 
+@media (max-width: 925px) {
+    .shapes-lista h3 {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 800px) {
-    .shapes-lista h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: 100%;
-    }
-
-    .shapes-lista {
-        padding-bottom: 60px;
-    }
-
     .shapes-lista ul {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0;
         gap: 20px;
+        box-sizing: border-box;
+        justify-content: start;
+    }
+
+    .shapes-lista li {
+        flex: 0 0 auto;
+        width: 280px;
+        box-sizing: border-box;
+    }
+
+    .shapes-lista span {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .shapes-lista li {
+        width: 100%;
     }
 }

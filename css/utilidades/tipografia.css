@@ -20,7 +20,7 @@
 
 .descricao-produtos {
     color: var(--c8);
-    font: 500 0.8rem var(--font-family);
+    font: 500 0.7rem var(--font-family);
 }
 
 .descricao-produtos strong {
@@ -172,10 +172,28 @@
     font: 400 1.3rem/133% var(--second-family);
 }
 
+.box-entrega {
+    font: 500 0.8rem/133% var(--font-family);
+}
+
+.titulo-informacoes-acima {
+    letter-spacing: 0.1rem;
+    font: 500 1.4rem/200% var(--font-family);
+    text-transform: uppercase;
+}
+
+.titulo-informacoes-shape {
+    font: 500 1rem/100% var(--font-family);
+}
+
+.texto-informacoes-shape {
+    font: 500 0.8rem/133% var(--font-family);
+}
+
 .titulo-ficha {
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font: 500 1.4rem/133% var(--font-family);
+    letter-spacing: 0.07em;
+    font: 500 1.4rem/0% var(--font-family);
 }
 
 .lista-ficha {
@@ -192,7 +210,7 @@
 }
 
 .descricao-propaganda {
-    font: 400 1rem/120% var(--second-family);
+    font: 400 1.1rem/120% var(--second-family);
 }
 
 @media (max-width: 1200px) {

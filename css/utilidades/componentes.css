@@ -93,8 +93,6 @@
     padding-bottom: 32px;
 }
 
-main 
-
 .titulo p {
     margin-bottom: 8px;
 }
@@ -103,10 +101,6 @@ main
     .titulo-bg {
         padding-top: 40px;
         padding-bottom: 20px;
-    }
-
-    .titulo p {
-        font-size: 0.8rem;
     }
 
     .titulo h1 {

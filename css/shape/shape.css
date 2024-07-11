@@ -11,15 +11,20 @@
     padding-bottom: 60px;
 }
 
+.shape h4 {
+    margin-top: 80px;
+    margin-bottom: 32px;
+}
+
 .shape-imagens {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.shape-imagem-principal {
+.shape-imagem-principal,
+.shape-imagens-secundarias img {
     max-width: 100%;
-    margin-bottom: 20px;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 }
@@ -33,8 +38,6 @@
 .shape-imagens-secundarias img {
     max-width: calc(33.333% - 13.33px);
     flex: 1 1 calc(33.333% - 13.33px);
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
 }
 
 .shape-conteudo>p {
@@ -73,9 +76,6 @@
     padding: 32px;
     background-color: var(--c12);
     border-radius: 8px;
-}
-
-.shape-informacoes {
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,7 +184,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    padding-left: 150px; 
+    padding-left: 150px;
 }
 
 .borda-retangulo {
@@ -278,7 +278,6 @@
     }
 }
 
-
 @media (max-width: 600px) {
     .lista-bg {
         grid-template-columns: 1fr;
@@ -297,8 +296,26 @@
         margin: 0;
         width: 40%;
     }
-}
 
+    .shape-comprar {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .shape-comprar a {
+        font-size: 1.4rem;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .shape-informacoes {
+        gap: 20px;
+    }
+
+    .descricao-shape {
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 1130px) and (min-width: 831px) {
     .outras-opcoes {
@@ -325,9 +342,8 @@
     }
 
     .container-retangulo {
-        padding-left: 130px; 
+        padding-left: 130px;
     }
-    
 
     .borda-retangulo {
         width: 130px;
@@ -356,7 +372,7 @@
     }
 
     .container-retangulo {
-        padding-left: 100px; 
+        padding-left: 100px;
     }
 
     .borda-retangulo {
@@ -373,58 +389,60 @@
 
     .container-retangulo {
         display: flex;
-        flex-direction: column; /* Empilha a borda e a imagem verticalmente */
-        position: relative; /* Necessário para o posicionamento absoluto da borda */
+        flex-direction: column;
+        position: relative;
         padding-left: 0;
     }
 
     .borda-retangulo {
-        width: 70%; /* Ajusta a largura da borda */
+        width: 70%;
         height: 100px;
-        border-radius: 50px 50px 0 0; /* Mantém o arredondamento na parte superior */
-        position: absolute; /* Posiciona a borda sobre a imagem */
-        top: 0; /* Alinha a borda no topo do contêiner */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translateX(-50%); /* Garante que a borda esteja centralizada horizontalmente */
-        background: var(--p3); /* Adiciona a cor de fundo para garantir que a borda fique visível */
+        border-radius: 50px 50px 0 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--p3);
         padding-bottom: 0;
         justify-content: start;
     }
 
     .propaganda-imagem {
         width: 100%;
-        height: 300px; /* Define uma altura específica */
+        height: 300px;
         display: flex;
-        justify-content: center; /* Alinha a imagem horizontalmente no centro */
-        align-items: center; /* Alinha a imagem verticalmente no centro */
+        justify-content: center;
+        align-items: center;
     }
 
     .propaganda-imagem img {
         width: 90%;
         height: 100%;
         padding-top: 200px;
-        object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+        object-fit: cover;
         object-position: bottom;
-        position: relative; /* Garante que a imagem esteja abaixo da borda */
-        z-index: 1; /* Garante que a imagem fique abaixo da borda */
+        position: relative;
+        z-index: 1;
         border-radius: 6px;
     }
 
     .propaganda h1 {
-        writing-mode: horizontal-tb; /* Remove a escrita vertical */
-        text-orientation: upright; /* Remove a orientação do texto */
-        transform: none; /* Remove a rotação */
-        margin-left: 40px; /* Remove o margin-left */
-        margin-bottom: 20px; /* Remove o margin-left */
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+        transform: none;
+        margin-left: 40px;
+        margin-bottom: 20px;
     }
 
     .propaganda h2 {
         margin-top: 140px;
         padding-left: 40px;
+        padding-right: 40px;
         width: auto;
     }
 
     .propaganda p {
+        font-size: 1.1rem;
         margin-top: 40px;
         position: relative;
         z-index: 2;
@@ -432,7 +450,7 @@
         padding-right: 40px;
         width: auto;
     }
-    
+
     .propaganda a {
         margin-top: 40px;
         font-size: 1rem;
@@ -440,5 +458,11 @@
         margin-left: 40px;
         margin-bottom: 40px;
         width: auto;
+    }
+
+    .dec-blooms {
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
     }
 }
