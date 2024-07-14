@@ -1,9 +1,9 @@
 .seguros-bg {
-    background: linear-gradient(360deg, #0d0000 0%, #730000 100%);
+    background: linear-gradient(to right, var(--c12) 0%, var(--c8) 100%);
 }
 
 .seguros-page {
-    background-color: var(--c10);
+    background: linear-gradient(to right, var(--c12) 0%, var(--c8) 100%);
 }
 
 #seguros .seguros {
@@ -11,7 +11,7 @@
 }
 
 #seguros .titulo-bg {
-    background-color: var(--c10);
+    background: linear-gradient(to right, var(--c12) 0%, var(--c8) 100%);
 }
 
 .seguros {
@@ -37,11 +37,11 @@
 }
 
 .seguros-item:nth-child(3) {
-    background: linear-gradient(180deg, #ffd700 0%, #ffb14e 100%);
+    background: linear-gradient(to right, #ffd700 0%, #f19a27 100%);
 }
 
 .seguros-page .seguros-item:nth-child(2) {
-    background: linear-gradient(180deg, #ffd700 0%, #ffb14e 100%);
+    background: linear-gradient(to right, #ffd700 0%, #f19a27 100%);
 }
 
 .seguros-item h3 {

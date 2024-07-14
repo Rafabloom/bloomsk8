@@ -213,6 +213,31 @@
     font: 400 1.1rem/120% var(--second-family);
 }
 
+.titulo-loja {
+    font: 600 1.2rem/133% var(--font-family);
+}
+
+.contato-info {
+    font: 400 1rem/160% var(--second-family);
+}
+
+.titulo-horario {
+    font: 600 1rem/200% var(--font-family);
+}
+
+.titulo-cidade {
+    font: 600 1.6rem/133% var(--font-family);
+}
+
+.lojas-dados {
+    font: 500 1rem/200% var(--second-family);
+    color: var(--c7);
+}
+
+.lojas-tempo {
+    font: 600 1rem/200% var(--font-family);
+}
+
 @media (max-width: 1200px) {
     .introducao h1 {
         font-size: 2.5rem;

@@ -19,6 +19,8 @@
     max-width: max-content;
     position: relative;
     z-index: 2;
+    border: none;
+    cursor: pointer;
 }
 
 .botao:hover {
