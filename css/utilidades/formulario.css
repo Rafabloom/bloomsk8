@@ -11,6 +11,16 @@
     margin-bottom: 4px;
 }
 
+.form select {
+    font: 400 1rem/171% var(--second-family);
+    background: var(--c2);
+    border: 2px solid var(--c4);
+    border-radius: 6px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .form .col-2 {
     grid-column: span 2;
 }
