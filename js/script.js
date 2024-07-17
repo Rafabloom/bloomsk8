@@ -64,3 +64,8 @@ function eventosPerguntas(pergunta) {
 
 perguntas.forEach(eventosPerguntas);
 
+// ANIMAR ELEMENTOS
+if (window.SimpleAnime) {
+    new SimpleAnime();
+  }
+  
