@@ -92,7 +92,11 @@
 .titulo-bg {
     background: var(--c11);
     padding-top: 60px;
-    padding-bottom: 32px;
+    padding-bottom: 40px;
+}
+
+.titulo {
+    background: url(../../blooms-arquivos/imagens/decorador/top-right-c12-60x60.svg) no-repeat top right 20px;
 }
 
 .titulo p {
@@ -102,7 +106,7 @@
 @media (max-width: 800px) {
     .titulo-bg {
         padding-top: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .titulo h1 {

@@ -7,24 +7,28 @@
     margin-bottom: 60px;
 }
 
-.perguntas dl > div {
+.perguntas dl>div {
     padding: 20px;
     border-radius: 24px;
 }
 
-.perguntas dl > div:nth-child(odd) {
+.perguntas dl>div:nth-child(odd) {
     background-color: var(--c3);
 }
 
-.perguntas dt {
+.perguntas button {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 8px;
+    width: 100%;
     cursor: pointer;
+    border: none;
+    background: none;
+    text-align: start;
 }
 
-.perguntas dt::before {
+.perguntas button::before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -32,7 +36,7 @@
     background: linear-gradient(90deg, #ff4343 0%, #600 100%);
 }
 
-.perguntas dt::after {
+.perguntas button::after {
     content: "";
     display: inline-block;
     width: 32px;
@@ -42,8 +46,17 @@
     transition: 0.3s;
 }
 
-.perguntas dt:hover::after {
-    transform: rotate(180deg);
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.perguntas dd {
+    display: none;
+}
+
+.perguntas dd.ativa {
+    display: block;
 }
 
 .perguntas dd {

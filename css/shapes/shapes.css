@@ -1,5 +1,5 @@
 .shapes-bg {
-    background-color: var(--c11);
+    background: var(--c11);
 }
 
 .shapes {
@@ -8,6 +8,12 @@
     gap: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: url(../../blooms-arquivos/imagens/decorador/top-right-c4.svg) no-repeat top 40px right 20px;
+}
+
+.shapes:nth-of-type(1),
+.shapes:nth-of-type(5) {
+    background:  url(../../blooms-arquivos/imagens/decorador/top-right-p3.svg) no-repeat top 40px right 20px;
 }
 
 .shapes-imagem {
@@ -92,7 +98,7 @@
 
 @media (max-width: 800px) {
     .shapes-bg {
-        background: var(--c11);
+        background: var(--c11) url(../../blooms-arquivos/imagens/decorador/top-right-p3.svg) no-repeat top 40px right 20px;
     }
 
     .shapes {

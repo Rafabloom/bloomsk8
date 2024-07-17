@@ -10,8 +10,10 @@
 
     <meta name="description" content="Shape.">
 
-    <!-- ESTILO CUSTOMIZADO -->
-    <link rel="stylesheet" href="../css/estilo.css">
+   <!-- ESTILO CUSTOMIZADO + FAVICON-->
+   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+   <link rel="preload" href="../css/estilo.min.css" as="style">
+   <link rel="stylesheet" href="../css/estilo.min.css">
 
     <!-- FONTES USADAS - GOOGLEFONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+<!-- ADIÇÃO DA CLASSE JS NO HTML -->
+    <script>document.documentElement.classList.add('js');</script>
 
 </head>
 
@@ -29,7 +34,7 @@
         <div class="header container">
 
             <a href="../">
-                <img src="../blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="../blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <nav aria-label="primaria">
@@ -58,7 +63,8 @@
         <div class="shape container">
 
             <div class="shape-imagens">
-                <img class="shape-imagem-principal" src="../Fotos/Shapes/shape4.png" alt="Primitive Lemos Legend Deck Gold 8.25">
+                <img class="shape-imagem-principal" src="../Fotos/Shapes/shape4.png"
+                    alt="Primitive Lemos Legend Deck Gold 8.25">
                 <div class="shape-imagens-secundarias">
                     <img src="../Fotos/Shapes/shape4(1).png" alt="Primitive Lemos Legend Deck Gold 8.25">
                     <img src="../Fotos/Shapes/shape4(2).png" alt="Primitive Lemos Legend Deck Gold 8.25">
@@ -67,9 +73,11 @@
             </div>
 
             <div class="shape-conteudo">
-                <p class="descricao-shape cor-c3">Deck profissional importado da Primitive, já é conhecido mundialmente, está fortemente presente no skate e tem um dos times de skatistas mais TOPs que existem, e seu deck de maple de alta qualidade já virou referência para muitos skatistas do mundo.</p>
+                <p class="descricao-shape cor-c3">Deck profissional importado da Primitive, já é conhecido mundialmente,
+                    está fortemente presente no skate e tem um dos times de skatistas mais TOPs que existem, e seu deck
+                    de maple de alta qualidade já virou referência para muitos skatistas do mundo.</p>
                 <div class="shape-comprar">
-                    <a class="botao" href="../orcamento.html">Comprar agora</a>
+                    <a class="botao" href="../orcamento.html?tipo=blooms&produto=legendgold">Comprar agora</a>
                     <span class="box-entrega cor-c5"><img src="../Icones/Skate/entrega.svg" alt="Entrega">Entrega em 4
                         dias
                         úteis</span>
@@ -130,12 +138,12 @@
                         <li>- A lâmina superior pode sofrer alteração na cor de acordo com o estoque;</li>
                         <li>- Produto 100% Original Importado e Lacrado;</li>
                     </ul>
-                    
+
                     <ul class="ficha-direita lista-ficha">
                         <li>- Peso aproximado: 1100 a 1200 gramas;</li>
                         <li>- Origem da Marca Americana;</li>
                         <li>- Garantia contra defeito de fabricação.</li>
-                    </ul>                    
+                    </ul>
 
                     <img class="ficha-imagem" src="../Icones/Skate/skate-g.svg" alt="">
 
@@ -206,7 +214,7 @@
         <div class="footer container">
 
             <a href="../">
-                <img src="../blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="../blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <div class="footer-contato">
@@ -221,14 +229,14 @@
                 </ul>
 
                 <div class="footer-redes">
-                    <a href="../">
-                        <img src="../Icones/Skate/instagram.svg" alt="Instagram">
+                    <a href="./">
+                        <img src="../Icones/Skate/instagram.svg" width="42" height="42" alt="Instagram">
                     </a>
-                    <a href="../">
-                        <img src="../Icones/Skate/facebook.svg" alt="Facebook">
+                    <a href="./">
+                        <img src="../Icones/Skate/facebook.svg" width="42" height="42" alt="Facebook">
                     </a>
-                    <a href="../">
-                        <img src="../Icones/Skate/youtube.svg" alt="Youtube">
+                    <a href="./">
+                        <img src="../Icones/Skate/youtube.svg" width="42" height="30" alt="Youtube">
                     </a>
                 </div>
 
@@ -252,6 +260,9 @@
 
     </footer>
     <!-- FIM FOOTER -->
+
+    <!-- SCRIPT JS -->
+    <script src="../js/script.js"></script>
 
 </body>
 

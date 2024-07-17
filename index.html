@@ -10,9 +10,11 @@
 
     <meta name="description"
         content="Quando começamos a Bloom's, nosso objetivo era criar um produto que nós mesmos adoraríamos usar. Amávamos a ideia de cruzar a cidade sobre rodas e de fabricar produtos sustentáveis, reduzindo o impacto ambiental.">
-
-    <!-- ESTILO CUSTOMIZADO -->
-    <link rel="stylesheet" href="css/estilo.css">
+   
+    <!-- ESTILO CUSTOMIZADO + FAVICON-->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="./css/estilo.min.css" as="style">
+    <link rel="stylesheet" href="./css/estilo.min.css">
 
     <!-- FONTES USADAS - GOOGLEFONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +22,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- ADIÇÃO DA CLASSE JS NO HTML -->
+    <script>document.documentElement.classList.add('js');</script>
 
 </head>
 
@@ -30,7 +35,7 @@
         <div class="header container">
 
             <a href="./">
-                <img src="./blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="./blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <nav aria-label="primaria">
@@ -66,10 +71,10 @@
 
             </div>
 
-            <div class="introducao-img">
-                <img src="Fotos/Gerais/introducao.jpg" alt="Skatista na Pista.">
-            </div>
-
+            <picture class="introducao-img">
+                <source media="(max-width: 800px)" srcset="Fotos/Gerais/introducao.jpg">
+                <img src="Fotos/Gerais/introducao.jpg"  width="768" height="768" alt="Skatista na Pista.">
+            </picture>
         </div>
     </main>
 
@@ -81,35 +86,35 @@
         <ul>
             <li>
                 <a href="./shapes/modelbliss.html">
-                    <img src="./Fotos/Shapes/shape2.png" alt="Shape - Modelo: Giovanni Vianna Bliss">
+                    <img src="./Fotos/Shapes/shape2.png" width="738" height="738" alt="Shape - Modelo: Giovanni Vianna Bliss">
                     <h3 class="titulo-produtos">Shape Primitive Maple 8.5 Giovanni Vianna Bliss</h3>
                     <span class="descricao-produtos"><strong>R$ 389,90</strong> no pix com 4% de desconto</span>
                 </a>
             </li>
             <li>
                 <a href="./shapes/modelrobertneal.html">
-                    <img src="./Fotos/Shapes/shape3.png" alt="Shape - Modelo: Robert Neal Dirty P Viper">
+                    <img src="./Fotos/Shapes/shape3.png" width="800" height="800" alt="Shape - Modelo: Robert Neal Dirty P Viper">
                     <h3 class="titulo-produtos">Shape Primitive 8.25 Maple Robert Neal Dirty P Viper</h3>
                     <span class="descricao-produtos"><strong>R$ 373.52</strong> no pix com 8% de desconto</span>
                 </a>
             </li>
             <li>
                 <a href="./shapes/modelprimitiveitachi.html">
-                    <img src="./Fotos/Shapes/shapeitachi2.jpg" alt="Shape - Modelo: Itachi Complete Skateboard">
+                    <img src="./Fotos/Shapes/shapeitachi2.jpg" width="1000" height="1000" alt="Shape - Modelo: Itachi Complete Skateboard">
                     <h3 class="titulo-produtos">PRIMITIVE X Itachi Skateboard Completo - 8.0</h3>
                     <span class="descricao-produtos"><strong>R$ 803,51</strong> à vista</span>
                 </a>
             </li>
             <li>
                 <a href="./shapes/modellemoslegendgold.html">
-                    <img src="./Fotos/Shapes/shape4.png" alt="Shape - Primitive Lemos Legend Deck Gold 8.25">
+                    <img src="./Fotos/Shapes/shape4.png" width="560" height="560" alt="Shape - Primitive Lemos Legend Deck Gold 8.25">
                     <h3 class="titulo-produtos">Shape - Primitive Lemos Legend Deck Gold 8.25</h3>
                     <span class="descricao-produtos"><strong>R$ 389,90</strong> à vista</span>
                 </a>
             </li>
             <li>
                 <a href="./shapes/modelcreatureigniter.html">
-                    <img src="./Fotos/Shapes/shape5.png" alt="Shape - Creature 9 Maple Igniter 9.0">
+                    <img src="./Fotos/Shapes/shape5.png" width="575" height="575" alt="Shape - Creature 9 Maple Igniter 9.0">
                     <h3 class="titulo-produtos">Creature 9 Maple Igniter 9.0</h3>
                     <span class="descricao-produtos"><strong>R$ 399,99</strong> à vista</span>
                 </a>
@@ -138,7 +143,7 @@
 
                 <div class="sustentavel-vantagens">
                     <div>
-                        <img src="./Icones/Skate/sustentavel1.svg" alt="Sustentável - Maple Canadense">
+                        <img src="./Icones/Skate/sustentavel1.svg" width="38" height="40" alt="Sustentável - Maple Canadense">
                         <h3 class="titulo-sustentavel">Maple Canadense</h3>
                         <p class="p-sustentavel">O maple canadense garante que a madeira é colhida de maneira
                             sustentável.
@@ -146,7 +151,7 @@
                     </div>
 
                     <div>
-                        <img src="./Icones/Skate/reciclagem.svg" alt="Reciclável - Bambu">
+                        <img src="./Icones/Skate/reciclagem.svg" width="42" height="40" alt="Reciclável - Bambu">
                         <h3 class="titulo-sustentavel">Bambu</h3>
                         <p class="p-sustentavel">O bambu cresce rapidamente e requer menos recursos (água e pesticidas)
                             para
@@ -157,7 +162,7 @@
             </div>
 
             <div class="sustentavel-imagem">
-                <img src="./Fotos/Gerais/sustentavel.jpg" alt="Sustentabilidade">
+                <img src="./Fotos/Gerais/sustentavel.jpg" width="3840" height="5760" alt="Sustentabilidade">
             </div>
 
         </div>
@@ -171,14 +176,14 @@
         <h1 class="texto-grande">Nossos parceiros<span class="cor-p1">.</span></h1>
 
         <ul>
-            <li><img src="./blooms-arquivos/imagens/parceiros/caravan.svg" alt="Caravan"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/dogs.svg" alt="Dogs"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/flexblog.svg" alt="Flexblog"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/handel.svg" alt="Handel"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/lescone.svg" alt="Lescone"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/ranek.svg" alt="Ranek"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/surfbot.svg" alt="Surfbot"></li>
-            <li><img src="./blooms-arquivos/imagens/parceiros/wildbeast.svg" alt="Wildbeast"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/caravan.svg" width="154" height="32" alt="Caravan"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/dogs.svg" width="154" height="32" alt="Dogs"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/flexblog.svg" width="154" height="32" alt="Flexblog"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/handel.svg" width="154" height="32" alt="Handel"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/lescone.svg" width="154" height="32" alt="Lescone"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/ranek.svg" width="154" height="32" alt="Ranek"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/surfbot.svg" width="154" height="32" alt="Surfbot"></li>
+            <li><img src="./blooms-arquivos/imagens/parceiros/wildbeast.svg" width="154" height="32" alt="Wildbeast"></li>
         </ul>
 
     </section>
@@ -188,7 +193,7 @@
     <section class="depoimento" aria-label="Depoimento">
 
         <div>
-            <img src="./Fotos/Gerais/depoimento.jpg" alt="Depoimento">
+            <img src="./Fotos/Gerais/depoimento.jpg" width="3456" height="3456" alt="Depoimento">
         </div>
 
         <div class="depoimento-conteudo">
@@ -252,7 +257,7 @@
         <div class="footer container">
 
             <a href="./">
-                <img src="./blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="./blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <div class="footer-contato">
@@ -268,13 +273,13 @@
 
                 <div class="footer-redes">
                     <a href="./">
-                        <img src="./Icones/Skate/instagram.svg" alt="Instagram">
+                        <img src="./Icones/Skate/instagram.svg" width="42" height="42" alt="Instagram">
                     </a>
                     <a href="./">
-                        <img src="./Icones/Skate/facebook.svg" alt="Facebook">
+                        <img src="./Icones/Skate/facebook.svg" width="42" height="42" alt="Facebook">
                     </a>
                     <a href="./">
-                        <img src="./Icones/Skate/youtube.svg" alt="Youtube">
+                        <img src="./Icones/Skate/youtube.svg" width="42" height="30" alt="Youtube">
                     </a>
                 </div>
 
@@ -298,6 +303,9 @@
 
     </footer>
     <!-- FIM FOOTER -->
+
+    <!-- SCRIPT JS -->
+    <script src="./js/script.js"></script>
 
 </body>
 

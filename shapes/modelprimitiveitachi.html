@@ -10,8 +10,10 @@
 
     <meta name="description" content="Shape.">
 
-    <!-- ESTILO CUSTOMIZADO -->
-    <link rel="stylesheet" href="../css/estilo.css">
+   <!-- ESTILO CUSTOMIZADO + FAVICON-->
+   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+   <link rel="preload" href="../css/estilo.min.css" as="style">
+   <link rel="stylesheet" href="../css/estilo.min.css">
 
     <!-- FONTES USADAS - GOOGLEFONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+<!-- ADIÇÃO DA CLASSE JS NO HTML -->
+    <script>document.documentElement.classList.add('js');</script>
 
 </head>
 
@@ -29,7 +34,7 @@
         <div class="header container">
 
             <a href="../">
-                <img src="../blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="../blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <nav aria-label="primaria">
@@ -51,7 +56,8 @@
         <div>
             <div class="titulo container">
                 <p class="valor-shapes cor-c6">R$ 803,51</p>
-                <h1 class="titulo-shapes cor-w">PRIMITIVE X Itachi Skateboard Completo - 8.0<span class="cor-p1">.</span></h1>
+                <h1 class="titulo-shapes cor-w">PRIMITIVE X Itachi Skateboard Completo - 8.0<span
+                        class="cor-p1">.</span></h1>
             </div>
         </div>
 
@@ -68,12 +74,16 @@
             </div>
 
             <div class="shape-conteudo">
-                <p class="descricao-shape cor-c3">O x Naruto Neal Crows Complete da Primitive é uma colaboração com o anime mundialmente popular Naruto. Este skate vem completo e totalmente montado e pronto para andar de skate assim que sai da caixa!</p>
+                <p class="descricao-shape cor-c3">O x Naruto Neal Crows Complete da Primitive é uma colaboração com o
+                    anime mundialmente popular Naruto. Este skate vem completo e totalmente montado e pronto para andar
+                    de skate assim que sai da caixa!</p>
                 <div class="shape-comprar">
-                    <a class="botao" href="../orcamento.html">Comprar agora</a>
-                    <span class="box-entrega cor-c5"><img src="../Icones/Skate/entrega.svg" alt="Entrega">Entrega em 3 dias
+                    <a class="botao" href="../orcamento.html?tipo=blooms&produto=xneal">Comprar agora</a>
+                    <span class="box-entrega cor-c5"><img src="../Icones/Skate/entrega.svg" alt="Entrega">Entrega em 3
+                        dias
                         úteis</span>
-                    <span class="box-entrega cor-c4"><img src="../Icones/Skate/estoque.svg" alt="Estoque">1 em estoque</span>
+                    <span class="box-entrega cor-c4"><img src="../Icones/Skate/estoque.svg" alt="Estoque">1 em
+                        estoque</span>
                 </div>
 
                 <h4 class="titulo-informacoes-acima cor-w">Informações</h4>
@@ -83,7 +93,8 @@
                     <li>
                         <img src="../Icones/Skate/sustentavel.svg" alt="">
                         <h3 class="titulo-informacoes-shape cor-c1">7 lâminas de Maple Canadense</h3>
-                        <p class="texto-informacoes-shape cor-c5">Proporciona durabilidade e flexibilidade no seu shape.</p>
+                        <p class="texto-informacoes-shape cor-c5">Proporciona durabilidade e flexibilidade no seu shape.
+                        </p>
                     </li>
 
                     <li>
@@ -129,16 +140,16 @@
                         <li>- Construção em maple de 7 camadas.</li>
                         <li>- Concave moderado.</li>
                         <li>- Peso aproximado: 1100 a 1200 gramas;</li>
-                        
+
                     </ul>
-                    
+
                     <ul class="ficha-direita lista-ficha">
                         <li>- Origem da Marca Americana;</li>
                         <li>- Garantia contra defeito de fabricação.</li>
                         <li>- Trucks Primitive de 5.25".</li>
                         <li>- Rodas Primitive 52mm 101a.</li>
                         <li>- Rolamentos Abec 7.</li>
-                    </ul>                   
+                    </ul>
 
                     <img class="ficha-imagem" src="../Icones/Skate/skate-g.svg" alt="">
 
@@ -187,9 +198,11 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="texto-grande cor-w">Troque suas peças antigas por novas com nosso <span class="cor-p1">seguro!</span></h2>
+                    <h2 class="texto-grande cor-w">Troque suas peças antigas por novas com nosso <span
+                            class="cor-p1">seguro!</span></h2>
 
-                    <p class="descricao-propaganda cor-c5">Conheça nossos planos, lá você obtém diversos benefícios, conheça o seguro da Bloom’s!</p>
+                    <p class="descricao-propaganda cor-c5">Conheça nossos planos, lá você obtém diversos benefícios,
+                        conheça o seguro da Bloom’s!</p>
 
                     <a class="botao" href="../seguros.html">Saiba mais</a>
 
@@ -197,7 +210,7 @@
                 </div>
             </div>
         </div>
-        
+
 
     </main>
 
@@ -207,7 +220,7 @@
         <div class="footer container">
 
             <a href="../">
-                <img src="../blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="../blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <div class="footer-contato">
@@ -222,14 +235,14 @@
                 </ul>
 
                 <div class="footer-redes">
-                    <a href="../">
-                        <img src="../Icones/Skate/instagram.svg" alt="Instagram">
+                    <a href="./">
+                        <img src="../Icones/Skate/instagram.svg" width="42" height="42" alt="Instagram">
                     </a>
-                    <a href="../">
-                        <img src="../Icones/Skate/facebook.svg" alt="Facebook">
+                    <a href="./">
+                        <img src="../Icones/Skate/facebook.svg" width="42" height="42" alt="Facebook">
                     </a>
-                    <a href="../">
-                        <img src="../Icones/Skate/youtube.svg" alt="Youtube">
+                    <a href="./">
+                        <img src="../Icones/Skate/youtube.svg" width="42" height="30" alt="Youtube">
                     </a>
                 </div>
 
@@ -253,6 +266,9 @@
 
     </footer>
     <!-- FIM FOOTER -->
+
+    <!-- SCRIPT JS -->
+    <script src="../js/script.js"></script>
 
 </body>
 

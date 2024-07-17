@@ -22,6 +22,22 @@
     gap: 20px;
 }
 
+.shape-imagem-principal {
+    position: relative; /* Necessário para posicionar a seta */
+    display: block;
+}
+
+.shape-imagem-principal::after {
+    content: url('../../Icones/Skate/seta-passar.svg'); /* Caminho para o ícone da seta */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+    pointer-events: none; /* Garante que a seta não interfira na interação com a imagem */
+}
+
 .shape-imagem-principal,
 .shape-imagens-secundarias img {
     max-width: 100%;
@@ -33,6 +49,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    cursor: pointer;
 }
 
 .shape-imagens-secundarias img {

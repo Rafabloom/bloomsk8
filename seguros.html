@@ -10,8 +10,10 @@
 
     <meta name="description" content="Seguros.">
 
-    <!-- ESTILO CUSTOMIZADO -->
-    <link rel="stylesheet" href="css/estilo.css">
+   <!-- ESTILO CUSTOMIZADO + FAVICON-->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="./css/estilo.min.css" as="style">
+    <link rel="stylesheet" href="./css/estilo.min.css">
 
     <!-- FONTES USADAS - GOOGLEFONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+<!-- ADIÇÃO DA CLASSE JS NO HTML -->
+    <script>document.documentElement.classList.add('js');</script>
 
 </head>
 
@@ -29,7 +34,7 @@
         <div class="header container">
 
             <a href="./">
-                <img src="./blooms-arquivos/imagens/blooms.svg" alt="Bloom's">
+                <img src="./blooms-arquivos/imagens/blooms.svg" width="154" height="32" alt="Bloom's">
             </a>
 
             <nav aria-label="primaria">
@@ -70,7 +75,7 @@
                     <li>Troque peças (não quebradas) por novas.</li>
                 </ul>
 
-                <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+                <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
 
             </div>
 
@@ -88,7 +93,7 @@
                     <li>Acesso ao clube Bloom’s.</li>
                 </ul>
 
-                <a class="botao terciario" href="./orcamento.html">Inscreva-se</a>
+                <a class="botao terciario" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
 
             </div>
 
@@ -148,41 +153,48 @@
 
         <dl>
             <div>
-                <dt class="titulo-perguntas">Qual forma de pagamento vocês aceitam?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                <dd id="pergunta1" class="respostas ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
             <div>
-                <dt class="titulo-perguntas">Como posso entrar em contato?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                <dd id="pergunta2" class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
             <div>
-                <dt class="titulo-perguntas">Qual a garantia que possuo?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta3" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+                <dd id="pergunta3" class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
             <div>
-                <dt class="titulo-perguntas">Quantas trocas posso fazer ao ano?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta4" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                <dd id="pergunta4" class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
             <div>
-                <dt class="titulo-perguntas">É possível parcelar alguma compra via boleto?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta5" aria-expanded="false">É possível parcelar alguma compra via boleto?</button></dt>
+                <dd id="pergunta5" class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
             <div>
-                <dt class="titulo-perguntas">Vocês possuem algum desconto?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta6" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                <dd id="pergunta6" class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
             <div>
-                <dt class="titulo-perguntas">Como sei a melhor medida para o tamanho do meu pé?</dt>
-                <dd class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="titulo-perguntas" aria-controls="pergunta7" aria-expanded="false">Como sei a melhor medida para o tamanho do meu pé?</button></dt>
+                <dd id="pergunta7" class="respostas">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo, American
+                    Express. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
 
-            
+
         </dl>
 
     </article>
@@ -210,13 +222,13 @@
 
                 <div class="footer-redes">
                     <a href="./">
-                        <img src="./Icones/Skate/instagram.svg" alt="Instagram">
+                        <img src="./Icones/Skate/instagram.svg" width="42" height="42" alt="Instagram">
                     </a>
                     <a href="./">
-                        <img src="./Icones/Skate/facebook.svg" alt="Facebook">
+                        <img src="./Icones/Skate/facebook.svg" width="42" height="42" alt="Facebook">
                     </a>
                     <a href="./">
-                        <img src="./Icones/Skate/youtube.svg" alt="Youtube">
+                        <img src="./Icones/Skate/youtube.svg" width="42" height="30" alt="Youtube">
                     </a>
                 </div>
 
@@ -240,6 +252,9 @@
 
     </footer>
     <!-- FIM FOOTER -->
+
+    <!-- SCRIPT JS -->
+    <script src="./js/script.js"></script>
 
 </body>
 

@@ -14,6 +14,10 @@
     background: linear-gradient(to right, var(--c12) 0%, var(--c8) 100%);
 }
 
+#seguros .titulo {
+    background: url(../../blooms-arquivos/imagens/decorador/top-right-c10-60x60.svg) no-repeat top right 20px;
+}
+
 .seguros {
     padding-top: 60px;
     padding-bottom: 60px;

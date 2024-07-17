@@ -2,6 +2,10 @@
     background: var(--c2);
 }
 
+#termos .titulo {
+    background: url(../../blooms-arquivos/imagens/decorador/top-right-c10-60x60.svg) no-repeat top right 20px;
+}
+
 .termos {
     padding-top: 60px;
     padding-bottom: 60px;

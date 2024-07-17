@@ -1,7 +1,7 @@
 .depoimento {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: var(--p1);
+    background: var(--p1) url(../../blooms-arquivos/imagens/decorador/bot-right-p3-90x90.svg) no-repeat bottom 20px right 20px;
     overflow: hidden;
 }
 
@@ -40,6 +40,18 @@
     bottom: -40px;
 }
 
+@media (max-width: 1200px) {
+    .depoimento-conteudo p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .depoimento img {
+        max-height: 520px;
+    }
+}
+
 @media (max-width: 800px) {
     .depoimento {
         grid-template-columns: 1fr;
@@ -53,6 +65,10 @@
     .depoimento-conteudo {
         padding: 40px 20px;
         margin: auto;
+    }
+
+    .depoimento-conteudo p {
+        font-size: 2rem;
     }
 
     .depoimento p::before {

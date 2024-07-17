@@ -41,6 +41,23 @@
     width: 100%;
 }
 
+.header-menu a.ativo {
+    font: 600 1.125rem var(--font-family);
+    color: var(--p1);
+    position: relative;
+}
+
+.header-menu a.ativo::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--p1);
+    margin-top: 4px;
+    transition: width 0.3s;
+    position: absolute;
+}
+
 @media (max-width: 800px) {
     .header a:after {
         display: none;

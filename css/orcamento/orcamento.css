@@ -56,7 +56,7 @@
 
 .orcamento-produto {
     border-radius: 5px 0 0 5px;
-    background: var(--c12);
+    background: var(--c12) url(../../blooms-arquivos/imagens/decorador/bot-left-p5-60x60.svg) no-repeat bottom 20px left 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -124,12 +124,7 @@
 
 .orcamento-dados {
     border-radius: 0 5px 5px 0;
-    background: var(--w);
-}
-
-.orcamento-dados {
-    border-radius: 0 5px 5px 0;
-    background: var(--w);
+    background: var(--w) url(../../blooms-arquivos/imagens/decorador/bot-right-c3-60x60.svg) no-repeat bottom 20px right 20px;
 }
 
 .orcamento-conteudo {

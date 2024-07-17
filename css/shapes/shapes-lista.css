@@ -79,6 +79,10 @@
 }
 
 @media (max-width: 800px) {
+    .shapes-lista h1 {
+        padding-left: 20px;
+    }
+    
     .shapes-lista ul {
         display: flex;
         flex-wrap: nowrap;

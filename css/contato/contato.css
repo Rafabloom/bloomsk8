@@ -6,6 +6,10 @@
     background-color: var(--p5);
 }
 
+#contato .titulo {
+    background: url(../../blooms-arquivos/imagens/decorador/top-right-p6-60x60.svg) no-repeat top right 20px;;
+}
+
 .contato {
     display: grid;
     grid-template-columns: 5fr 7fr;
@@ -18,11 +22,11 @@
 }
 
 .contato-dados {
-    background: var(--p6);
+    background: var(--p6) url(../../blooms-arquivos/imagens/decorador/bot-left-p5-60x60.svg) no-repeat bottom 20px left 20px;
     border-radius: 6px 0 0 6px;
 }
 .contato-formulario {
-    background: var(--w);
+    background: var(--w) url(../../blooms-arquivos/imagens/decorador/bot-right-c3-60x60.svg) no-repeat bottom 20px right 20px;
     border-radius: 0 6px 6px 0;
 }
 
