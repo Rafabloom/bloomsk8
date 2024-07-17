@@ -76,6 +76,10 @@
     .header-menu a:hover {
         background: var(--c9);
     }
+    
+    .header-menu a.ativo::after {
+        content: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -86,9 +90,5 @@
     .header-menu a {
         padding: 8px 12px;
         font-size: 1rem;
-    }
-
-    .header-menu a.ativo::after {
-        content: none;
     }
 }
