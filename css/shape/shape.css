@@ -281,7 +281,7 @@
 
     .shape-imagens-secundarias {
         max-width: calc(81.333% - 13.33px);
-        flex: 1 1 calc(83.333% - 13.33px);
+        flex: 1 1 calc(80.333% - 13.33px);
         place-self: center;
     }
 
